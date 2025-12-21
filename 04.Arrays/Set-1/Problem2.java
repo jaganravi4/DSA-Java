@@ -48,10 +48,10 @@ public class Problem2{
             // calculate candidate profit
             int profit = prices[i] - curr_min;
 
-            // check if candidate profit is greater that maxProfit
+            // check if candidate profit is greater than maxProfit
             maxProfit = Math.max(profit, maxProfit);
 
-            // check if ith stock price is smaller that curr_min
+            // check if ith stock price is smaller than current minimum
             curr_min = Math.min(prices[i], curr_min);
         }
 
